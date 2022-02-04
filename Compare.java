@@ -63,10 +63,13 @@ public class Compare {
 		//Check if n is one of the base cases
 		switch(n) {
 			case 0:
+				_iterativeCount = 1;
 				return nMinus3;
 			case 1:
+				_iterativeCount = 1;
 				return nMinus2;
 			case 2:
+				_iterativeCount = 1;
 				return nMinus1;
 			default:
 				//if n is not one of the base cases, iterate through using the formula
