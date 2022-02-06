@@ -18,14 +18,15 @@ public class Test {
 	 * @param args command line arguments passed in at execution
 	 */
 	public static void main(String[] args) {
-		//Check n=2 [result should be 2]
-		checkIterative(2);
-		checkRecursive(2);
 		
-		//check n=10
-		checkIterative(10);
-		checkRecursive(10);
+		// list of cases to test (first value is always dummy)
+		int[] testCases = {0,0,1,2,3,4,5,6,7,8,9,10};
 		
+		//test all of the test cases
+		for(int i:testCases) {
+			checkIterative(i);
+			checkRecursive(i);
+		}
 	}
 	
 	/**
